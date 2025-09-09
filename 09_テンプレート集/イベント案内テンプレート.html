@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[イベント名] - 参加者募集</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+        }
+        .event-title {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .event-subtitle {
+            color: #6c757d;
+            font-size: 1.2em;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .info-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #495057;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .info-value {
+            font-size: 1.1em;
+            color: #212529;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta-button:hover {
+            background: #0056b3;
+        }
+        .section {
+            margin: 30px 0;
+        }
+        .section h3 {
+            color: #007bff;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+        .highlight {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="event-title">[イベント名]</h1>
+            <p class="event-subtitle">[キャッチコピー・サブタイトル]</p>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="info-label">開催日時</div>
+                <div class="info-value">[YYYY年MM月DD日（曜日）]<br>[開始時間] - [終了時間]</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">会場</div>
+                <div class="info-value">[会場名]<br>[住所]</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">参加費</div>
+                <div class="info-value">[金額]<br>[早割・学割などの情報]</div>
+            </div>
+            <div class="info-card">
+                <div class="info-label">定員</div>
+                <div class="info-value">[X]名<br>（先着順）</div>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <strong>🎯 このイベントで得られること</strong><br>
+            [参加者のメリット・学べることを3-5点で簡潔に]
+        </div>
+
+        <div style="text-align: center;">
+            <a href="[申込みURL]" class="cta-button">今すぐ申し込む</a>
+        </div>
+
+        <div class="section">
+            <h3>📋 プログラム</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr style="background: #f8f9fa;">
+                    <th style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">時間</th>
+                    <th style="padding: 10px; border: 1px solid #dee2e6; text-align: left;">内容</th>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #dee2e6;">[時間1]</td>
+                    <td style="padding: 10px; border: 1px solid #dee2e6;">[内容1]</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #dee2e6;">[時間2]</td>
+                    <td style="padding: 10px; border: 1px solid #dee2e6;">[内容2]</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #dee2e6;">[時間3]</td>
+                    <td style="padding: 10px; border: 1px solid #dee2e6;">[内容3]</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h3>👤 講師紹介</h3>
+            <p><strong>[講師名]</strong></p>
+            <p>[講師の経歴・専門分野・実績などを2-3行で]</p>
+        </div>
+
+        <div class="section">
+            <h3>📝 申込み方法</h3>
+            <ol>
+                <li>下記の申込みボタンをクリック</li>
+                <li>必要事項を入力</li>
+                <li>確認メールが届いたら申込み完了</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h3>⚠️ 注意事項</h3>
+            <ul>
+                <li>キャンセルは[X]日前まで可能です</li>
+                <li>当日の飛び入り参加はできません</li>
+                <li>資料は当日配布いたします</li>
+                <li>[その他の注意事項]</li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="[申込みURL]" class="cta-button">申し込みはこちら</a>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #dee2e6;">
+            <p><strong>お問い合わせ</strong></p>
+            <p>[主催者名]<br>
+            電話: [電話番号]<br>
+            メール: [メールアドレス]</p>
+        </div>
+    </div>
+</body>
+</html>
