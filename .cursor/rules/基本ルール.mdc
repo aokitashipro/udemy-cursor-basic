@@ -1,6 +1,5 @@
 ---
 description: 全プロジェクト共通の基本ルール
-globs: ["*.md", "*.html", "*.txt"]
 alwaysApply: true
 ---
 
