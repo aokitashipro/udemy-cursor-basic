@@ -1,0 +1,24 @@
+/* Minimal Marp base (variables come from marp-theme.json via template) */
+section { padding: calc(var(--header-h) + 24px) 60px calc(var(--footer-h) + 24px); }
+h1, h2 { color: var(--c-h); }
+p, li { color: var(--c-text); line-height: 1.5; }
+header, footer { color: var(--c-hf); }
+
+/* Header/Footer background with fixed height */
+header {
+  position: absolute; left: 0; right: 0; top: 0;
+  height: var(--header-h);
+  background: var(--c-hf-bg);
+  padding: 8px 60px; display: flex; align-items: center;
+}
+footer {
+  position: absolute; left: 0; right: 0; bottom: 0;
+  height: var(--footer-h);
+  background: var(--c-hf-bg);
+  padding: 8px 60px; display: flex; align-items: center;
+}
+
+/* Simple overflow helpers */
+.tight ul { margin: 6px 0; }
+.small p, .small li { font-size: 0.9rem; line-height: 1.45; }
+.xs p, .xs li { font-size: 0.85rem; line-height: 1.4; }
